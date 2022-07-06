@@ -17,6 +17,19 @@ import { LogisticOneComponent } from './products/logistic-one/logistic-one.compo
 import { HrisComponent } from './products/hris/hris.component';
 import { HeaderComponent } from './header-footer/header/header.component';
 import { FooterComponent } from './header-footer/footer/footer.component';
+import {LayoutComponent} from "./layout/layout.component";
+import {NzDropDownModule} from "ng-zorro-antd/dropdown";
+import { NZ_I18N } from 'ng-zorro-antd/i18n';
+import { en_US } from 'ng-zorro-antd/i18n';
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NzIconModule} from "ng-zorro-antd/icon";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+
+registerLocaleData(en);
 
 @NgModule({
   declarations: [
@@ -34,13 +47,20 @@ import { FooterComponent } from './header-footer/footer/footer.component';
     LogisticOneComponent,
     HrisComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+      FormsModule,
+      HttpClientModule,
+      BrowserAnimationsModule,
+      FontAwesomeModule,
+      NzDropDownModule,
+      NzIconModule
   ],
-  providers: [],
+  providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

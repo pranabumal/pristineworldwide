@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-hris',
   templateUrl: './hris.component.html',
-  styleUrls: ['./hris.component.css']
+  styleUrls: ['./hris.component.scss']
 })
 export class HrisComponent implements OnInit {
 

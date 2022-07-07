@@ -88,11 +88,11 @@
                                 </a>
                                 <nz-dropdown-menu #company="nzDropdownMenu">
                                     <ul nz-menu nzSelectable>
-                                        <li nz-menu-item>About Us</li>
-                                        <li nz-menu-item>Awards & Accolades</li>
-                                        <li nz-menu-item>Success Stories</li>
-                                        <li nz-menu-item>Resources</li>
-                                        <li nz-menu-item>Partners</li>
+                                        <li [routerLink]="['/about-us']" nz-menu-item>About Us</li>
+                                        <li [routerLink]="['/awards']" nz-menu-item>Awards & Accolades</li>
+                                        <li [routerLink]="['/success-stories']" nz-menu-item>Success Stories</li>
+                                        <li [routerLink]="['/resources']" nz-menu-item>Resources</li>
+                                        <li [routerLink]="['/partnerships']" nz-menu-item>Partners</li>
                                     </ul>
                                 </nz-dropdown-menu>
                             </li>

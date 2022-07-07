@@ -3,18 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from "./app-routing.module";
-import { SapBusinessoneComponent } from './products/sap-businessone/sap-businessone.component';
-import { SapBusinessBydesignComponent } from './products/sap-business-bydesign/sap-business-bydesign.component';
-import { SapHanaComponent } from './products/sap-hana/sap-hana.component';
-import { SapCustomerCheckoutComponent } from './products/sap-customer-checkout/sap-customer-checkout.component';
-import { FocusPointComponent } from './products/eCommerce/focus-point/focus-point.component';
-import { BigcommerceComponent } from './products/eCommerce/bigcommerce/bigcommerce.component';
-import { SfaComponent } from './products/sfa/sfa.component';
-import { SapApparelComponent } from './products/sap-apparel/sap-apparel.component';
-import { AgriOneComponent } from './products/agri-one/agri-one.component';
-import { TeaOneComponent } from './products/tea-one/tea-one.component';
-import { LogisticOneComponent } from './products/logistic-one/logistic-one.component';
-import { HrisComponent } from './products/hris/hris.component';
+import { SapBusinessoneComponent } from './company/products/sap-businessone/sap-businessone.component';
+import { SapBusinessBydesignComponent } from './company/products/sap-business-bydesign/sap-business-bydesign.component';
+import { SapHanaComponent } from './company/products/sap-hana/sap-hana.component';
+import { SapCustomerCheckoutComponent } from './company/products/sap-customer-checkout/sap-customer-checkout.component';
+import { FocusPointComponent } from './company/products/eCommerce/focus-point/focus-point.component';
+import { BigcommerceComponent } from './company/products/eCommerce/bigcommerce/bigcommerce.component';
+import { SfaComponent } from './company/products/sfa/sfa.component';
+import { SapApparelComponent } from './company/products/sap-apparel/sap-apparel.component';
+import { AgriOneComponent } from './company/products/agri-one/agri-one.component';
+import { TeaOneComponent } from './company/products/tea-one/tea-one.component';
+import { LogisticOneComponent } from './company/products/logistic-one/logistic-one.component';
+import { HrisComponent } from './company/products/hris/hris.component';
 import { HeaderComponent } from './header-footer/header/header.component';
 import { FooterComponent } from './header-footer/footer/footer.component';
 import {LayoutComponent} from "./layout/layout.component";
@@ -32,6 +32,11 @@ import {NzAffixModule} from "ng-zorro-antd/affix";
 import {NzGridModule} from "ng-zorro-antd/grid";
 import {CarouselModule} from "ngx-owl-carousel-o";
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { AwardsComponent } from './company/awards/awards.component';
+import { SuccessStoriesComponent } from './company/success-stories/success-stories.component';
+import { ResourcesComponent } from './company/resources/resources.component';
+import { PartnershipsComponent } from './company/partnerships/partnerships.component';
 
 registerLocaleData(en);
 
@@ -54,7 +59,12 @@ registerLocaleData(en);
     FooterComponent,
     LayoutComponent,
       HomeComponent,
-      ContactUsComponent
+      ContactUsComponent,
+      AboutUsComponent,
+      AwardsComponent,
+      SuccessStoriesComponent,
+      ResourcesComponent,
+      PartnershipsComponent
   ],
   imports: [
     BrowserModule,

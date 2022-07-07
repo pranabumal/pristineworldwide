@@ -1,0 +1,93 @@
+@import "src/styles/custom-variables";
+
+.hero-section {
+    background-image: url("../../assets/images/banner-1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info {
+    padding: 25px;
+    margin: 0 0 30px 0;
+    background: rgba(234,234,234,0.8);
+    width: 100%;
+    max-width: 70%;
+    text-align: center;
+
+    .hero-text {
+        color: $hero-text-color;
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 700 !important;
+    }
+
+    .info-text {
+        color: #000000;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+}
+
+.solution-offer {
+    background-color: $solution-offer-bg;
+}
+
+
+.industry-support {
+    background-color: $industry-support-bg;
+
+    .section-grid {
+        &:hover {
+            text-decoration-color: #74a19e !important;
+            text-decoration: underline;
+        }
+    }
+}
+
+.technology {
+    .inner-box {
+        padding: 48px;
+        text-align: center;
+        color: #ffffff;
+        letter-spacing: -0.5px;
+
+        .box-title {
+            font-size: 28px;
+        }
+
+        .box-info-text {
+            text-align: left;
+        }
+
+        img {
+            width: 98px;
+            height: 98px;
+        }
+
+        .ul-check {
+            text-align: left;
+
+            li {
+                margin-bottom: 16px;
+            }
+        }
+
+        &.box-one {
+            background-color: #405fa8;
+        }
+
+        &.box-two {
+            background-color: #506db1;
+        }
+
+        &.box-three {
+            background-color: #637db8;
+        }
+    }
+}

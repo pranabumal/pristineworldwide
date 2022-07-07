@@ -30,6 +30,7 @@ import {NzIconModule} from "ng-zorro-antd/icon";
 import {HomeComponent} from "./home/home.component";
 import {NzAffixModule} from "ng-zorro-antd/affix";
 import {NzGridModule} from "ng-zorro-antd/grid";
+import {CarouselModule} from "ngx-owl-carousel-o";
 
 registerLocaleData(en);
 
@@ -59,6 +60,7 @@ registerLocaleData(en);
       FormsModule,
       HttpClientModule,
       BrowserAnimationsModule,
+      CarouselModule,
       NzDropDownModule,
       NzIconModule,
       NzAffixModule,

@@ -14,10 +14,11 @@ import {TeaOneComponent} from "./products/tea-one/tea-one.component";
 import {LogisticOneComponent} from "./products/logistic-one/logistic-one.component";
 import {HrisComponent} from "./products/hris/hris.component";
 import {LayoutComponent} from "./layout/layout.component";
+import {HomeComponent} from "./home/home.component";
 
 const routes: Routes = [
 
-    {path: '', component: LayoutComponent},
+    {path: '', component: HomeComponent},
     {path: 'sap-businessone', component: SapBusinessoneComponent},
     {path: 'sap-business-bydesign', component: SapBusinessBydesignComponent},
     {path: 'sap-hana', component: SapHanaComponent},

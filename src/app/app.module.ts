@@ -27,7 +27,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NzIconModule} from "ng-zorro-antd/icon";
-import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import {HomeComponent} from "./home/home.component";
 
 registerLocaleData(en);
 
@@ -48,7 +48,8 @@ registerLocaleData(en);
     HrisComponent,
     HeaderComponent,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+      HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +57,6 @@ registerLocaleData(en);
       FormsModule,
       HttpClientModule,
       BrowserAnimationsModule,
-      FontAwesomeModule,
       NzDropDownModule,
       NzIconModule
   ],

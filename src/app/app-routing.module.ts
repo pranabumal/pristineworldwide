@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {AppComponent} from "./app.component";
 import {SapBusinessoneComponent} from "./products/sap-businessone/sap-businessone.component";
 import {SapBusinessBydesignComponent} from "./products/sap-business-bydesign/sap-business-bydesign.component";
 import {SapHanaComponent} from "./products/sap-hana/sap-hana.component";
@@ -13,8 +12,8 @@ import {AgriOneComponent} from "./products/agri-one/agri-one.component";
 import {TeaOneComponent} from "./products/tea-one/tea-one.component";
 import {LogisticOneComponent} from "./products/logistic-one/logistic-one.component";
 import {HrisComponent} from "./products/hris/hris.component";
-import {LayoutComponent} from "./layout/layout.component";
 import {HomeComponent} from "./home/home.component";
+import {ContactUsComponent} from "./contact-us/contact-us.component";
 
 const routes: Routes = [
 
@@ -31,6 +30,7 @@ const routes: Routes = [
     {path: 'tea-one', component: TeaOneComponent},
     {path: 'logistic-one', component: LogisticOneComponent},
     {path: 'hris', component: HrisComponent},
+    {path: 'contact-us', component: ContactUsComponent},
     {path: '**', redirectTo: ''}
 ];
 

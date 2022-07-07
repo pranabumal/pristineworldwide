@@ -1,113 +1,115 @@
-<section class="header-bg">
-    <div class="container">
-        <section class="top-bar">
-            <!--<div class="icons-list">
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i nz-icon nzType="instagram" nzTheme="outline"></i>
-                <i nz-icon nzType="twitter" nzTheme="outline"></i>
-            </div>
-            <div>
-                <ul class="d-flex">
-                    <li class="list-group mr-2"><i nz-icon nzType="mail" nzTheme="outline"></i> mkt@pristineworldwide.com</li>
-                    <li class="list-group mr-2">icon</li>
-                    <li class="list-group mr-2">BD</li>
-                </ul>
-            </div>-->
-        </section>
-
-        <header>
-            <nav class="navbar navbar-expand-lg sticky-header p-0">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/pristine-logo.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsupportedcontent" aria-controls="navbarsupportedcontent" aria-expanded="false" aria-label="toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarsupportedcontent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link"  nz-dropdown [nzDropdownMenu]="products">
-                                Products
-                                <i class="ml-1" nz-icon nzType="down"></i>
-                            </a>
-                            <nz-dropdown-menu #products="nzDropdownMenu">
-                                <ul nz-menu nzSelectable>
-                                    <li nz-menu-item [routerLink]="['/sap-businessone']">SAP Business One</li>
-                                    <li nz-menu-item [routerLink]="['/sap-business-bydesign']">SAP BusinessByDesign</li>
-                                    <li nz-menu-item [routerLink]="['/sap-hana']">SAP S/4 HANA</li>
-                                    <li nz-menu-item [routerLink]="['/sap-customer-checkout']">PoS Software</li>
-                                    <li nz-submenu nzTitle="eCommerce">
-                                        <ul>
-                                            <li nz-menu-item [routerLink]="['/focus-point']">FocusPoint</li>
-                                            <li nz-menu-item [routerLink]="['/bigcommerce']">Big Commerce</li>
-                                        </ul>
-                                    </li>
-                                    <li nz-menu-item [routerLink]="['/sfa']">SFA</li>
-                                    <li nz-menu-item [routerLink]="['/sap-apparel']">SAP Apparel</li>
-                                    <li nz-menu-item [routerLink]="['/agri-one']">Agri One</li>
-                                    <li nz-menu-item [routerLink]="['/tea-one']">Tea One</li>
-                                    <li nz-menu-item [routerLink]="['/logistic-one']">Logistic One</li>
-                                    <li nz-menu-item [routerLink]="['/hris']">HRIS</li>
-                                </ul>
-                            </nz-dropdown-menu>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  nz-dropdown [nzDropdownMenu]="technology">
-                                Technology
-                                <i class="ml-1" nz-icon nzType="down"></i>
-                            </a>
-                            <nz-dropdown-menu #technology="nzDropdownMenu">
-                                <ul nz-menu nzSelectable>
-                                    <li nz-menu-item>Internet of Things (IoT)</li>
-                                    <li nz-menu-item>Blockchain</li>
-                                    <li nz-menu-item>Machine Learning</li>
-                                </ul>
-                            </nz-dropdown-menu>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  nz-dropdown [nzDropdownMenu]="services">
-                                Services
-                                <i class="ml-1" nz-icon nzType="down"></i>
-                            </a>
-                            <nz-dropdown-menu #services="nzDropdownMenu">
-                                <ul nz-menu nzSelectable>
-                                    <li nz-menu-item>Project Management</li>
-                                    <li nz-menu-item>Services & Training</li>
-                                    <li nz-menu-item>Consulting</li>
-                                </ul>
-                            </nz-dropdown-menu>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  nz-dropdown [nzDropdownMenu]="company">
-                                Company
-                                <i class="ml-1" nz-icon nzType="down"></i>
-                            </a>
-                            <nz-dropdown-menu #company="nzDropdownMenu">
-                                <ul nz-menu nzSelectable>
-                                    <li nz-menu-item>About Us</li>
-                                    <li nz-menu-item>Awards & Accolades</li>
-                                    <li nz-menu-item>Success Stories</li>
-                                    <li nz-menu-item>Resources</li>
-                                    <li nz-menu-item>Partners</li>
-                                </ul>
-                            </nz-dropdown-menu>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" >
-                                Industry
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" >
-                                Contact us
-                            </a>
-                        </li>
-                    </ul>
+<nz-affix [nzOffsetTop]="0">
+    <section class="header-bg">
+        <div class="container">
+            <section class="top-bar">
+                <!--<div class="icons-list">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i nz-icon nzType="instagram" nzTheme="outline"></i>
+                    <i nz-icon nzType="twitter" nzTheme="outline"></i>
                 </div>
-            </nav>
-        </header>
-    </div>
-</section>
+                <div>
+                    <ul class="d-flex">
+                        <li class="list-group mr-2"><i nz-icon nzType="mail" nzTheme="outline"></i> mkt@pristineworldwide.com</li>
+                        <li class="list-group mr-2">icon</li>
+                        <li class="list-group mr-2">BD</li>
+                    </ul>
+                </div>-->
+            </section>
+
+            <header>
+                <nav class="navbar navbar-expand-lg main-header p-0">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/pristine-logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsupportedcontent" aria-controls="navbarsupportedcontent" aria-expanded="false" aria-label="toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarsupportedcontent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link"  nz-dropdown [nzDropdownMenu]="products">
+                                    Products
+                                    <i class="ml-1" nz-icon nzType="down"></i>
+                                </a>
+                                <nz-dropdown-menu #products="nzDropdownMenu">
+                                    <ul nz-menu nzSelectable>
+                                        <li nz-menu-item [routerLink]="['/sap-businessone']">SAP Business One</li>
+                                        <li nz-menu-item [routerLink]="['/sap-business-bydesign']">SAP BusinessByDesign</li>
+                                        <li nz-menu-item [routerLink]="['/sap-hana']">SAP S/4 HANA</li>
+                                        <li nz-menu-item [routerLink]="['/sap-customer-checkout']">PoS Software</li>
+                                        <li nz-submenu nzTitle="eCommerce">
+                                            <ul>
+                                                <li nz-menu-item [routerLink]="['/focus-point']">FocusPoint</li>
+                                                <li nz-menu-item [routerLink]="['/bigcommerce']">Big Commerce</li>
+                                            </ul>
+                                        </li>
+                                        <li nz-menu-item [routerLink]="['/sfa']">SFA</li>
+                                        <li nz-menu-item [routerLink]="['/sap-apparel']">SAP Apparel</li>
+                                        <li nz-menu-item [routerLink]="['/agri-one']">Agri One</li>
+                                        <li nz-menu-item [routerLink]="['/tea-one']">Tea One</li>
+                                        <li nz-menu-item [routerLink]="['/logistic-one']">Logistic One</li>
+                                        <li nz-menu-item [routerLink]="['/hris']">HRIS</li>
+                                    </ul>
+                                </nz-dropdown-menu>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"  nz-dropdown [nzDropdownMenu]="technology">
+                                    Technology
+                                    <i class="ml-1" nz-icon nzType="down"></i>
+                                </a>
+                                <nz-dropdown-menu #technology="nzDropdownMenu">
+                                    <ul nz-menu nzSelectable>
+                                        <li nz-menu-item>Internet of Things (IoT)</li>
+                                        <li nz-menu-item>Blockchain</li>
+                                        <li nz-menu-item>Machine Learning</li>
+                                    </ul>
+                                </nz-dropdown-menu>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"  nz-dropdown [nzDropdownMenu]="services">
+                                    Services
+                                    <i class="ml-1" nz-icon nzType="down"></i>
+                                </a>
+                                <nz-dropdown-menu #services="nzDropdownMenu">
+                                    <ul nz-menu nzSelectable>
+                                        <li nz-menu-item>Project Management</li>
+                                        <li nz-menu-item>Services & Training</li>
+                                        <li nz-menu-item>Consulting</li>
+                                    </ul>
+                                </nz-dropdown-menu>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"  nz-dropdown [nzDropdownMenu]="company">
+                                    Company
+                                    <i class="ml-1" nz-icon nzType="down"></i>
+                                </a>
+                                <nz-dropdown-menu #company="nzDropdownMenu">
+                                    <ul nz-menu nzSelectable>
+                                        <li nz-menu-item>About Us</li>
+                                        <li nz-menu-item>Awards & Accolades</li>
+                                        <li nz-menu-item>Success Stories</li>
+                                        <li nz-menu-item>Resources</li>
+                                        <li nz-menu-item>Partners</li>
+                                    </ul>
+                                </nz-dropdown-menu>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" >
+                                    Industry
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" >
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </section>
+</nz-affix>

@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body {
-    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Open Sans", sans-serif !important;
 }
 h1 {
     font-weight: 700 !important;
@@ -31,4 +31,50 @@ h2, h3, h4, h5, h6 {
 }
 .font-15 {
     font-size: 15px;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 900 !important;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    color: #000000;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid $input-border-color;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-grid {
+    .grid-img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        margin-bottom: 16px;
+    }
+
+    p {
+        letter-spacing: -0.5px;
+    }
+}
+
+.btn-learn-more {
+    background: #a2c0be;
+    border-color: #a2c0be;
+    color: #fff;
+
+    &:hover {
+        background: #000;
+        border-color: #000;
+        color: #fff;
+    }
 }

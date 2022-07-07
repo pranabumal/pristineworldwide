@@ -28,6 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NzIconModule} from "ng-zorro-antd/icon";
 import {HomeComponent} from "./home/home.component";
+import {NzAffixModule} from "ng-zorro-antd/affix";
+import {NzGridModule} from "ng-zorro-antd/grid";
 
 registerLocaleData(en);
 
@@ -58,7 +60,9 @@ registerLocaleData(en);
       HttpClientModule,
       BrowserAnimationsModule,
       NzDropDownModule,
-      NzIconModule
+      NzIconModule,
+      NzAffixModule,
+      NzGridModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

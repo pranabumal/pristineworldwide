@@ -31,6 +31,7 @@ import {HomeComponent} from "./home/home.component";
 import {NzAffixModule} from "ng-zorro-antd/affix";
 import {NzGridModule} from "ng-zorro-antd/grid";
 import {CarouselModule} from "ngx-owl-carousel-o";
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 registerLocaleData(en);
 
@@ -52,7 +53,8 @@ registerLocaleData(en);
     HeaderComponent,
     FooterComponent,
     LayoutComponent,
-      HomeComponent
+      HomeComponent,
+      ContactUsComponent
   ],
   imports: [
     BrowserModule,

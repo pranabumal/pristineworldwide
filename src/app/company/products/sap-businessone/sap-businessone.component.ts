@@ -23,4 +23,8 @@ export class SapBusinessoneComponent implements OnInit {
             target: "#hubspotForm"
         });
     }
+
+    scroll(el: any) {
+        el.scrollIntoView();
+    }
 }

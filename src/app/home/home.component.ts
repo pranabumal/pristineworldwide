@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
         pullDrag: false,
         dots: false,
         autoplay: true,
-        // navText: [''],
+        navText: ["<div class='nav-btn prev-slide'><img src='assets/images/icons/arrow-left.svg' alt=''></div>", "<div class='nav-btn next-slide'><img src='assets/images/icons/arrow-right.svg' alt=''></div>"],
         responsive: {
             0: {
                 items: 1

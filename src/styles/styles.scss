@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "custom-variables";
 @import "bootstrap/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body {
     font-family: "Open Sans", sans-serif !important;
@@ -76,5 +75,39 @@ h2, h3, h4, h5, h6 {
         background: #000;
         border-color: #000;
         color: #fff;
+    }
+}
+
+.page-heading-section {
+    text-align: center;
+    padding: 60px 0 50px;
+
+    .title {
+        font-size: 40px;
+        font-weight: 700 !important;
+        margin-bottom: 40px;
+    }
+
+    .sub-title {
+        color: #808080;
+    }
+
+    .heading-img {
+        width: 100%;
+    }
+}
+
+.contact-form {
+    background-color: $header-bg;
+    padding: 48px 0;
+
+    h4,p {
+        color: #808080;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 300;
     }
 }

@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
+import * as AOS from 'aos';
+
 declare let hbspt: any
 
 @Component({
@@ -13,6 +15,7 @@ export class SapBusinessoneComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        AOS.init();
     }
 
     ngAfterContentInit(): void {

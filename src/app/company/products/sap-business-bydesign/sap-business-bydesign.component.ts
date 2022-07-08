@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
+import * as AOS from 'aos';
+
 declare let hbspt: any
 
 @Component({
@@ -9,10 +11,17 @@ declare let hbspt: any
 })
 export class SapBusinessBydesignComponent implements OnInit {
 
+    image = [
+        "assets/images/businessByDesign/carousel-1.jpeg",
+        "assets/images/businessByDesign/carousel-2.jpeg",
+        "assets/images/businessByDesign/carousel-3.jpeg"
+    ];
+
     constructor() {
     }
 
     ngOnInit(): void {
+        AOS.init();
     }
 
     ngAfterContentInit(): void {
@@ -24,4 +33,7 @@ export class SapBusinessBydesignComponent implements OnInit {
         });
     }
 
+    scroll(el: any) {
+        el.scrollIntoView();
+    }
 }

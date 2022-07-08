@@ -37,6 +37,7 @@ import { AwardsComponent } from './company/awards/awards.component';
 import { SuccessStoriesComponent } from './company/success-stories/success-stories.component';
 import { ResourcesComponent } from './company/resources/resources.component';
 import { PartnershipsComponent } from './company/partnerships/partnerships.component';
+import {NzCarouselModule} from "ng-zorro-antd/carousel";
 
 registerLocaleData(en);
 
@@ -76,7 +77,8 @@ registerLocaleData(en);
       NzDropDownModule,
       NzIconModule,
       NzAffixModule,
-      NzGridModule
+      NzGridModule,
+      NzCarouselModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

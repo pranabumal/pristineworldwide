@@ -1,7 +1,7 @@
 @import "src/styles/custom-variables";
 
 .hero-section {
-    background-image: url("../../assets/images/banner-1.jpeg");
+    background-image: url("../../assets/images/sales-force/salesforce-banner-1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -9,8 +9,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: change 10s infinite ease-in-out;
 }
-
+@keyframes change{
+    0%
+    {
+        background-image: url(../../assets/images/sales-force/salesforce-banner-1.jpg);
+    }
+    50%
+    {
+        background-image: url(../../assets/images/sales-force/salesforce-banner-2.jpg);
+    }
+    100%
+    {
+        background-image: url(../../assets/images/sales-force/salesforce-banner-3.jpg);
+    }
+}
 .hero-info {
     padding: 25px;
     margin: 0 0 30px 0;

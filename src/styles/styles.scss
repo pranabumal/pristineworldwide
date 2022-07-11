@@ -89,7 +89,7 @@ h2, h3, h4, h5, h6 {
     }
 
     .sub-title {
-        color: #808080;
+        color: $subtitle-color;
     }
 
     .heading-img {
@@ -102,7 +102,7 @@ h2, h3, h4, h5, h6 {
     padding: 48px 0;
 
     h4,p {
-        color: #808080;
+        color: $subtitle-color;
         margin-bottom: 16px;
     }
 
@@ -115,4 +115,8 @@ h2, h3, h4, h5, h6 {
 .lead {
     font-size: 20px;
     font-weight: 300;
+}
+
+.subtitle-color {
+    color: $subtitle-color;
 }

@@ -1,0 +1,11 @@
+@import "src/styles/custom-variables";
+
+.customer-checkout {
+    .benefits {
+        background-color: $header-bg;
+    }
+
+    .technical-information {
+        background-color: $header-bg;
+    }
+}

@@ -101,6 +101,10 @@ h2, h3, h4, h5, h6 {
     background-color: $header-bg;
     padding: 48px 0;
 
+    &.customer-checkout {
+        background-color: $white !important;
+    }
+
     h4,p {
         color: $subtitle-color;
         margin-bottom: 16px;

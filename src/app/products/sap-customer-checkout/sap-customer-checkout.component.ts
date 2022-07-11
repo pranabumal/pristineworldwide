@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
+import * as AOS from 'aos';
+
 declare let hbspt: any
 
 @Component({
@@ -13,6 +15,7 @@ export class SapCustomerCheckoutComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        AOS.init();
     }
 
     ngAfterContentInit(): void {
@@ -22,5 +25,9 @@ export class SapCustomerCheckoutComponent implements OnInit {
             formId: "49b8ec53-f4b6-4a73-aeb6-2381c9acdcfa",
             target: "#hubspotForm"
         });
+    }
+
+    scroll(el: any) {
+        el.scrollIntoView();
     }
 }

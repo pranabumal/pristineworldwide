@@ -1,6 +1,20 @@
 @import "src/styles/custom-variables";
 
 .hero-section {
+    position: relative;
+
+    &-text {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.hero-section-slider {
     background-image: url("../../assets/images/sales-force/salesforce-banner-1.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -10,6 +24,7 @@
     justify-content: center;
     align-items: center;
     animation: change 10s infinite ease-in-out;
+    opacity: 0.6;
 }
 @keyframes change{
     0%

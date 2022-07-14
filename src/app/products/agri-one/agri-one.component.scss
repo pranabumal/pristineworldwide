@@ -1,0 +1,17 @@
+@import "src/styles/custom-variables";
+
+.benefits {
+    padding-bottom: 60px;
+
+    .block_service {
+        img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+
+        h6 {
+            margin-bottom: 16px;
+        }
+    }
+}

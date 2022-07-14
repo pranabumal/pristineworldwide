@@ -1,0 +1,16 @@
+@import "src/styles/custom-variables";
+
+.sap-apparel {
+    .blog-entry-text {
+        h3 {
+            a {
+                font-size: 21px;
+                color: $body-color;
+
+                &:hover {
+                    color: #a2c0be;
+                }
+            }
+        }
+    }
+}

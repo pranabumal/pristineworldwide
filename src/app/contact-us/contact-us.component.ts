@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import * as AOS from "aos";
 
 declare let hbspt: any
 
@@ -12,6 +13,7 @@ export class ContactUsComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        AOS.init();
     }
 
     ngAfterContentInit(): void {

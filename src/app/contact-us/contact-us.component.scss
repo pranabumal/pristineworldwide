@@ -1,0 +1,27 @@
+@import "src/styles/custom-variables";
+
+.contact-us {
+    background-color: $header-bg;
+    color: $subtitle-color;
+
+    .page-heading-section {
+        .title {
+            color: $black;
+            font-size: 32px;
+            font-weight: 900 !important;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+    }
+
+    .cell-icon-color {
+        color: #E8182A;
+    }
+}
+
+.contact-form {
+    .title {
+        color: $black;
+        font-size: 28px;
+    }
+}

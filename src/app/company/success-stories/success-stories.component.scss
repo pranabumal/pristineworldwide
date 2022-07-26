@@ -1,0 +1,47 @@
+@import "src/styles/custom-variables";
+
+.company-success-stories {
+    margin-bottom: 30px;
+
+    .page-heading-section {
+        padding: 300px 0;
+        .title {
+            font-size: 64px;
+            color: $black;
+        }
+    }
+
+    .reviews {
+        background-color: $white !important;
+        margin-bottom: 40px;
+    }
+
+    .testimonial {
+        padding: 60px 0;
+
+        .info-text {
+            color: $subtitle-color;
+        }
+    }
+}
+
+//owl carousel
+::ng-deep {
+    .owl-theme .owl-nav [class*=owl-] {
+        background: transparent;
+
+        &:hover {
+            background: transparent !important;
+        }
+
+        .nav-btn {
+
+            img {
+                width: 22px !important;
+                height: 20px !important;
+            }
+        }
+
+
+    }
+}

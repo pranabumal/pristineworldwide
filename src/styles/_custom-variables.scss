@@ -37,6 +37,7 @@ $secondary: $gray-700;
 $success: $light-green;
 $warning: $orange;
 $danger: $red;
+//$info: $custom-info;
 $blue-8: #1E68B8;
 $orange-8: #F58B2E;
 $primary-6: #1890FF;
@@ -45,6 +46,7 @@ $blue-10: #165BA6;
 $neutral-3: #F5F5F5;
 $auth-bg:   #E6E6E6;
 $public-bg: #F0F2F5;
+$custom-info:    #a2c0be;
 
 $theme-colors: ();
 $theme-colors: map-merge((
@@ -52,7 +54,7 @@ $theme-colors: map-merge((
     "primary-6": $primary-6,
     "secondary": $secondary,
     "success": $success,
-    "info": $info,
+    "info": $custom-info,
     "warning": $warning,
     "danger": $danger,
     //"light":      $light,
@@ -62,7 +64,6 @@ $theme-colors: map-merge((
     "orange-8": $orange-8,
     "finish-success": $polar-Green
 ), $theme-colors);
-
 
 $line-height-xs: 1.5;
 

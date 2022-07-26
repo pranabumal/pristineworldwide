@@ -1,0 +1,9 @@
+@import "src/styles/custom-variables";
+
+.awards {
+    .block_service {
+        h2 {
+            color: $subtitle-color;
+        }
+    }
+}

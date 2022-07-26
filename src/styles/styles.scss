@@ -131,3 +131,55 @@ h2, h3, h4, h5, h6 {
 .subtitle-color {
     color: $subtitle-color;
 }
+
+
+.success-stories {
+    background-color: #ecf4ed;
+
+    .message-wrapper {
+        padding: 20px;
+
+        figure {
+            padding-top: 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-width: 100px;
+                border: 10px solid #66ce79;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .quote-message {
+        background-color: $quote-text-bg;
+        padding: 30px;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        border-radius: 7px;
+        color: #000000;
+        font-family: "Vollkorn", serif;
+        position: relative;
+        -webkit-box-shadow: 0 5px 20px -5px rgb(0 0 0 / 40%);
+        box-shadow: 0 5px 20px -5px rgb(0 0 0 / 0%);
+
+        &:before {
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(162, 192, 190, 0);
+            border-top-color: #66ce79;
+            border-width: 15px;
+            margin-left: -15px;
+        }
+    }
+}
+

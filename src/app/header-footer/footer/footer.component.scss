@@ -41,6 +41,14 @@
                     &:hover {
                         color: $footer-link-hover;
                     }
+
+                    .icon-img {
+                        width: 14px;
+                        height: 14px;
+                        filter: invert(1);
+                        margin-right: 5px;
+                        margin-bottom: 1px;
+                    }
                 }
             }
         }

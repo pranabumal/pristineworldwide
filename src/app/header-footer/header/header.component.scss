@@ -5,11 +5,19 @@
     padding: 10px 0 0;
 
     .icons-list {
-        .icon-img {
-            filter: opacity(0.6);
-            width: 13px;
-            height: 13px;
-            margin-right: 24px;
+        a {
+            .icon-img {
+                filter: opacity(0.6);
+                width: 13px;
+                height: 13px;
+                margin-right: 24px;
+            }
+
+            &:hover {
+                .icon-img {
+                    filter: opacity(1);
+                }
+            }
         }
     }
 

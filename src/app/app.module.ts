@@ -41,52 +41,58 @@ import {NzCarouselModule} from "ng-zorro-antd/carousel";
 import {IotComponent} from "./technology/iot/iot.component";
 import {MachineLearningComponent} from "./technology/machine-learning/machine-learning.component";
 import {BlockChainComponent} from "./technology/block-chain/block-chain.component";
+import {ProjectManagementComponent} from "./services/project-management/project-management.component";
+import {ServiceTrainingComponent} from "./services/service-training/service-training.component";
+import {ConsultingComponent} from "./services/consulting/consulting.component";
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SapBusinessoneComponent,
-    SapBusinessBydesignComponent,
-    SapHanaComponent,
-    SapCustomerCheckoutComponent,
-    FocusPointComponent,
-    BigcommerceComponent,
-    SfaComponent,
-    SapApparelComponent,
-    AgriOneComponent,
-    TeaOneComponent,
-    LogisticOneComponent,
-    HrisComponent,
-    HeaderComponent,
-    FooterComponent,
-    LayoutComponent,
-      HomeComponent,
-      ContactUsComponent,
-      AboutUsComponent,
-      AwardsComponent,
-      SuccessStoriesComponent,
-      ResourcesComponent,
-      PartnershipsComponent,
-      IotComponent,
-      MachineLearningComponent,
-      BlockChainComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-      FormsModule,
-      HttpClientModule,
-      BrowserAnimationsModule,
-      CarouselModule,
-      NzDropDownModule,
-      NzIconModule,
-      NzAffixModule,
-      NzGridModule,
-      NzCarouselModule
-  ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        SapBusinessoneComponent,
+        SapBusinessBydesignComponent,
+        SapHanaComponent,
+        SapCustomerCheckoutComponent,
+        FocusPointComponent,
+        BigcommerceComponent,
+        SfaComponent,
+        SapApparelComponent,
+        AgriOneComponent,
+        TeaOneComponent,
+        LogisticOneComponent,
+        HrisComponent,
+        HeaderComponent,
+        FooterComponent,
+        LayoutComponent,
+        HomeComponent,
+        ContactUsComponent,
+        AboutUsComponent,
+        AwardsComponent,
+        SuccessStoriesComponent,
+        ResourcesComponent,
+        PartnershipsComponent,
+        IotComponent,
+        MachineLearningComponent,
+        BlockChainComponent,
+        ProjectManagementComponent,
+        ServiceTrainingComponent,
+        ConsultingComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        CarouselModule,
+        NzDropDownModule,
+        NzIconModule,
+        NzAffixModule,
+        NzGridModule,
+        NzCarouselModule
+    ],
+    providers: [{ provide: NZ_I18N, useValue: en_US }],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

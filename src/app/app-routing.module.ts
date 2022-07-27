@@ -22,6 +22,9 @@ import {PartnershipsComponent} from "./company/partnerships/partnerships.compone
 import {IotComponent} from "./technology/iot/iot.component";
 import {BlockChainComponent} from "./technology/block-chain/block-chain.component";
 import {MachineLearningComponent} from "./technology/machine-learning/machine-learning.component";
+import {ProjectManagementComponent} from "./services/project-management/project-management.component";
+import {ServiceTrainingComponent} from "./services/service-training/service-training.component";
+import {ConsultingComponent} from "./services/consulting/consulting.component";
 
 const routes: Routes = [
 
@@ -46,6 +49,9 @@ const routes: Routes = [
     {path: 'technology-iot', component: IotComponent},
     {path: 'technology-blockchain', component: BlockChainComponent},
     {path: 'technology-machine-learning', component: MachineLearningComponent},
+    {path: 'project-management', component: ProjectManagementComponent},
+    {path: 'support-service', component: ServiceTrainingComponent},
+    {path: 'consulting', component: ConsultingComponent},
     {path: 'contact-us', component: ContactUsComponent},
     {path: '**', redirectTo: ''}
 ];

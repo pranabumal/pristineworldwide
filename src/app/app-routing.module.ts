@@ -25,6 +25,7 @@ import {MachineLearningComponent} from "./technology/machine-learning/machine-le
 import {ProjectManagementComponent} from "./services/project-management/project-management.component";
 import {ServiceTrainingComponent} from "./services/service-training/service-training.component";
 import {ConsultingComponent} from "./services/consulting/consulting.component";
+import {IndustryComponent} from "./industry/industry.component";
 
 const routes: Routes = [
 
@@ -52,6 +53,7 @@ const routes: Routes = [
     {path: 'project-management', component: ProjectManagementComponent},
     {path: 'support-service', component: ServiceTrainingComponent},
     {path: 'consulting', component: ConsultingComponent},
+    {path: 'industry', component: IndustryComponent},
     {path: 'contact-us', component: ContactUsComponent},
     {path: '**', redirectTo: ''}
 ];

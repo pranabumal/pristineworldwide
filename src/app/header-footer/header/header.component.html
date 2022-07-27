@@ -91,9 +91,9 @@
                                 </a>
                                 <nz-dropdown-menu #services="nzDropdownMenu">
                                     <ul nz-menu nzSelectable>
-                                        <li nz-menu-item>Project Management</li>
-                                        <li nz-menu-item>Services & Training</li>
-                                        <li nz-menu-item>Consulting</li>
+                                        <li nz-menu-item [routerLink]="['/project-management']">Project Management</li>
+                                        <li nz-menu-item [routerLink]="['/support-service']">Services & Training</li>
+                                        <li nz-menu-item [routerLink]="['/consulting']">Consulting</li>
                                     </ul>
                                 </nz-dropdown-menu>
                             </li>

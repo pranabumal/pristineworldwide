@@ -1,0 +1,13 @@
+@import "src/styles/custom-variables";
+
+.project-management {
+    color: $subtitle-color;
+    margin-bottom: 60px;
+
+    .page-heading-section {
+        .title {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+    }
+}

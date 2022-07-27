@@ -19,6 +19,9 @@ import {AboutUsComponent} from "./about-us/about-us.component";
 import {SuccessStoriesComponent} from "./company/success-stories/success-stories.component";
 import {ResourcesComponent} from "./company/resources/resources.component";
 import {PartnershipsComponent} from "./company/partnerships/partnerships.component";
+import {IotComponent} from "./technology/iot/iot.component";
+import {BlockChainComponent} from "./technology/block-chain/block-chain.component";
+import {MachineLearningComponent} from "./technology/machine-learning/machine-learning.component";
 
 const routes: Routes = [
 
@@ -40,6 +43,9 @@ const routes: Routes = [
     {path: 'success-stories', component: SuccessStoriesComponent},
     {path: 'resources', component: ResourcesComponent},
     {path: 'partnerships', component: PartnershipsComponent},
+    {path: 'technology-iot', component: IotComponent},
+    {path: 'technology-blockchain', component: BlockChainComponent},
+    {path: 'technology-machine-learning', component: MachineLearningComponent},
     {path: 'contact-us', component: ContactUsComponent},
     {path: '**', redirectTo: ''}
 ];

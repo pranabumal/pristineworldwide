@@ -38,6 +38,9 @@ import { SuccessStoriesComponent } from './company/success-stories/success-stori
 import { ResourcesComponent } from './company/resources/resources.component';
 import { PartnershipsComponent } from './company/partnerships/partnerships.component';
 import {NzCarouselModule} from "ng-zorro-antd/carousel";
+import {IotComponent} from "./technology/iot/iot.component";
+import {MachineLearningComponent} from "./technology/machine-learning/machine-learning.component";
+import {BlockChainComponent} from "./technology/block-chain/block-chain.component";
 
 registerLocaleData(en);
 
@@ -65,7 +68,10 @@ registerLocaleData(en);
       AwardsComponent,
       SuccessStoriesComponent,
       ResourcesComponent,
-      PartnershipsComponent
+      PartnershipsComponent,
+      IotComponent,
+      MachineLearningComponent,
+      BlockChainComponent
   ],
   imports: [
     BrowserModule,

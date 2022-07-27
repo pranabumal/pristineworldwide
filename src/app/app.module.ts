@@ -44,6 +44,7 @@ import {BlockChainComponent} from "./technology/block-chain/block-chain.componen
 import {ProjectManagementComponent} from "./services/project-management/project-management.component";
 import {ServiceTrainingComponent} from "./services/service-training/service-training.component";
 import {ConsultingComponent} from "./services/consulting/consulting.component";
+import {IndustryComponent} from "./industry/industry.component";
 
 registerLocaleData(en);
 
@@ -77,7 +78,8 @@ registerLocaleData(en);
         BlockChainComponent,
         ProjectManagementComponent,
         ServiceTrainingComponent,
-        ConsultingComponent
+        ConsultingComponent,
+        IndustryComponent
     ],
     imports: [
         BrowserModule,

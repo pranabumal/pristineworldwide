@@ -1,14 +1,38 @@
 @import "src/styles/custom-variables";
 
+.top-bar {
+    background-color: $header-bg;
+    padding: 10px 0 0;
+
+    .icons-list {
+        .icon-img {
+            filter: opacity(0.6);
+            width: 13px;
+            height: 13px;
+            margin-right: 24px;
+        }
+    }
+
+    .right-menu {
+        ul {
+            li {
+                display: inline-block;
+                font-size: 14px;
+
+                a {
+                    &:hover {
+                        color: #50d8af;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .header-bg {
     background-color: $header-bg;
     box-shadow: 0px 6px 9px 0px rgb(0 0 0 / 6%);
     padding-bottom: 10px;
-}
-
-.top-bar {
-    display: flex;
-    justify-content: space-between;
 }
 
 .main-header {

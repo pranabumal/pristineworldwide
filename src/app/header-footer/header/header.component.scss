@@ -4,6 +4,10 @@
     background-color: $header-bg;
     padding: 10px 0 0;
 
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+
     .icons-list {
         a {
             .icon-img {

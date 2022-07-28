@@ -1,0 +1,10 @@
+@import "src/styles/custom-variables";
+
+.people {
+    width: 25%;
+
+    &:hover {
+        transform: scale(1.2);
+        transition-duration: .3s;
+    }
+}

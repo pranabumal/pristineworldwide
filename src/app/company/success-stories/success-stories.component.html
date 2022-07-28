@@ -1,7 +1,7 @@
 <section class="company-success-stories">
     <div class="container">
         <div class="page-heading-section">
-            <h1 class="title"><b>SUCCESS STORIES</b></h1>
+            <h1 class="title">SUCCESS STORIES</h1>
             <hr>
             <h4 class="sub-title">Watch testimonials and read reviews for Pristine Solutions.
                 <br>Learn about flourishing customers companies and see how they have reached success.</h4>
@@ -143,16 +143,21 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-right" data-aos-duration="1000">
-                                <a data-fancybox="" data-ratio="1.5" href="https://youtu.be/f8bVt3sQkxM" class="video-img">
-				<span class="play">
-					<span class="icon-play"></span>
-				</span>
+                                <div class="video-wrapper" (click)="showAkraModal()">
+                                    <div class="play-icon">
+                                        <img src="assets/images/icons/play-fill.svg" alt="">
+                                    </div>
                                     <img src="assets/images/success-stories/success-stories-akra.png" alt="Akra Bakers with Pristine Solutions for SAP Business One" class="img-fluid">
-                                </a>
+                                </div>
+                                <nz-modal [(nzVisible)]="isAkraVisible" (nzOnCancel)="handleAkraModal()" [nzCentered]="true" [nzFooter]="null" [nzWidth]="1060">
+                                    <ng-container *nzModalContent>
+                                        <iframe name="fancybox-frame1658991412484" class="iframe-video" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src="https://www.youtube-nocookie.com/embed/ADKa7ouJ5LM?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1" scrolling="no"></iframe>
+                                    </ng-container>
+                                </nz-modal>
                             </div>
                             <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-left">
                                 <h2 class="text-black">Akra Bakers</h2>
-                                <p class="mb-4 info-text" align="left">Leading the Sri Lankan food and beverage market sector for more than 15 years, Akra Bakers is a cookery business that produces quality baked items such as breads and buns that are unique in their own taste.”
+                                <p class="mb-4 info-text" align="left">Leading the Sri Lankan food and beverage market sector for more than 15 years, Akra Bakers is a cookery business that produces quality baked items such as breads and buns that are unique in their own taste.
                                     <br>Akra Bakers (Pvt.) Ltd. has grown their business using <a href="sap-businessone.php">SAP BusinessOne</a>.</p>
                             </div>
                         </div>
@@ -163,12 +168,17 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="mb-4 mb-lg-0 col-lg-6" data-aos="fade-left">
-                                <a data-fancybox="" data-ratio="1.5" href="https://youtu.be/4sTPleUOTu4" class="video-img">
-				<span class="play">
-					<span class="icon-play"></span>
-				</span>
-                                    <img src="assets/images/success-stories/success-stories-kmn.png" alt="KMN Aqua with Pristine Solutions for SAP Business One" class="img-fluid">
-                                </a>
+                                <div class="video-wrapper" (click)="showKmnModal()">
+                                    <div class="play-icon">
+                                        <img src="assets/images/icons/play-fill.svg" alt="">
+                                    </div>
+                                    <img src="assets/images/success-stories/success-stories-kmn.png" alt="Akra Bakers with Pristine Solutions for SAP Business One" class="img-fluid">
+                                </div>
+                                <nz-modal [(nzVisible)]="isKmnVisible" (nzOnCancel)="handleKmnModal()" [nzCentered]="true" [nzFooter]="null" [nzWidth]="1060">
+                                    <ng-container *nzModalContent>
+                                        <iframe name="fancybox-frame1658991412484" class="iframe-video" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src="https://www.youtube-nocookie.com/embed/4sTPleUOTu4?autoplay=1&autohide=1&fs=1&rel=0&hd=1&wmode=transparent&enablejsapi=1&html5=1" scrolling="no"></iframe>
+                                    </ng-container>
+                                </nz-modal>
                             </div>
                             <div class="col-lg-5 ml-auto align-self-center" data-aos="fade-right" data-aos-duration="1000">
                                 <h2 class="text-black">KMN Aqua Services</h2>
@@ -182,12 +192,17 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-right" data-aos-duration="1000">
-                                <a data-fancybox="" data-ratio="1.5" href="https://youtu.be/ADKa7ouJ5LM" class="video-img">
-                                    <span class="play">
-                                        <span class="icon-play"></span>
-                                    </span>
-                                    <img src="assets/images/success-stories/success-stories-prime.png" alt="Prime Lands with Pristine Solutions for SAP Business One" class="img-fluid">
-                                </a>
+                                <div class="video-wrapper" (click)="showPrimeModal()">
+                                    <div class="play-icon">
+                                        <img src="assets/images/icons/play-fill.svg" alt="">
+                                    </div>
+                                    <img src="assets/images/success-stories/success-stories-prime.png" alt="Akra Bakers with Pristine Solutions for SAP Business One" class="img-fluid">
+                                </div>
+                                <nz-modal [(nzVisible)]="isPrimeVisible" (nzOnCancel)="handlePrimeModal()" [nzCentered]="true" [nzFooter]="null" [nzWidth]="1060">
+                                    <ng-container *nzModalContent>
+                                        <iframe name="fancybox-frame1658991412484" class="iframe-video" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src="https://www.youtube-nocookie.com/embed/ADKa7ouJ5LM?autoplay=1&autohide=1&fs=1&rel=0&hd=1&wmode=transparent&enablejsapi=1&html5=1" scrolling="no"></iframe>
+                                    </ng-container>
+                                </nz-modal>
                             </div>
                             <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-left">
                                 <h2 class="text-black">Prime Lands</h2>
@@ -201,12 +216,17 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="mb-4 mb-lg-0 col-lg-6" data-aos="fade-left">
-                                <a data-fancybox="" data-ratio="1.5" href="https://youtu.be/gsGvRvxwDUA" class="video-img">
-				<span class="play">
-					<span class="icon-play"></span>
-				</span>
-                                    <img src="assets/images/success-stories/success-stories-amazon.png" alt="Amazon Tea with Pristine Solutions for SAP Business One" class="img-fluid">
-                                </a>
+                                <div class="video-wrapper" (click)="showAmazonModal()">
+                                    <div class="play-icon">
+                                        <img src="assets/images/icons/play-fill.svg" alt="">
+                                    </div>
+                                    <img src="assets/images/success-stories/success-stories-amazon.png" alt="Akra Bakers with Pristine Solutions for SAP Business One" class="img-fluid">
+                                </div>
+                                <nz-modal [(nzVisible)]="isAmazonVisible" (nzOnCancel)="handleAmazonModal()" [nzCentered]="true" [nzFooter]="null" [nzWidth]="1060">
+                                    <ng-container *nzModalContent>
+                                        <iframe name="fancybox-frame1658991412484" class="iframe-video" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src="https://www.youtube-nocookie.com/embed/gsGvRvxwDUA?autoplay=1&autohide=1&fs=1&rel=0&hd=1&wmode=transparent&enablejsapi=1&html5=1" scrolling="no"></iframe>
+                                    </ng-container>
+                                </nz-modal>
                             </div>
                             <div class="col-lg-5 ml-auto align-self-center" data-aos="fade-right" data-aos-duration="1000">
                                 <h2 class="text-black">Amazon Trading</h2>
@@ -220,12 +240,17 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-right" data-aos-duration="1000">
-                                <a data-fancybox="" data-ratio="1.5" href="https://youtu.be/pa0FW5qie1w" class="video-img">
-				<span class="play">
-					<span class="icon-play"></span>
-				</span>
-                                    <img src="assets/images/success-stories/success-stories-biomed.png" alt="Biomed Lifesciences with Pristine Solutions for SAP Business One" class="img-fluid">
-                                </a>
+                                <div class="video-wrapper" (click)="showBiomedModal()">
+                                    <div class="play-icon">
+                                        <img src="assets/images/icons/play-fill.svg" alt="">
+                                    </div>
+                                    <img src="assets/images/success-stories/success-stories-biomed.png" alt="Akra Bakers with Pristine Solutions for SAP Business One" class="img-fluid">
+                                </div>
+                                <nz-modal [(nzVisible)]="isBiomedVisible" (nzOnCancel)="handleBiomedModal()" [nzCentered]="true" [nzFooter]="null" [nzWidth]="1060">
+                                    <ng-container *nzModalContent>
+                                        <iframe name="fancybox-frame1658991412484" class="iframe-video" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src="https://www.youtube-nocookie.com/embed/pa0FW5qie1w?autoplay=1&autohide=1&fs=1&rel=0&hd=1&wmode=transparent&enablejsapi=1&html5=1" scrolling="no"></iframe>
+                                    </ng-container>
+                                </nz-modal>
                             </div>
                             <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-left">
                                 <h2 class="text-black">Biomed Scientific</h2>
@@ -239,12 +264,17 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="mb-4 mb-lg-0 col-lg-6" data-aos="fade-left">
-                                <a data-fancybox="" data-ratio="1.5" href="https://youtu.be/NeMIq97NmqU" class="video-img">
-				<span class="play">
-					<span class="icon-play"></span>
-				</span>
-                                    <img src="assets/images/success-stories/success-stories-anveraly.png" alt="Anverally Tea with Pristine Solutions for SAP Business One" class="img-fluid">
-                                </a>
+                                <div class="video-wrapper" (click)="showAnverallyModal()">
+                                    <div class="play-icon">
+                                        <img src="assets/images/icons/play-fill.svg" alt="">
+                                    </div>
+                                    <img src="assets/images/success-stories/success-stories-anveraly.png" alt="Akra Bakers with Pristine Solutions for SAP Business One" class="img-fluid">
+                                </div>
+                                <nz-modal [(nzVisible)]="isAnverallyVisible" (nzOnCancel)="handleAnverallyModal()" [nzCentered]="true" [nzFooter]="null" [nzWidth]="1060">
+                                    <ng-container *nzModalContent>
+                                        <iframe name="fancybox-frame1658991412484" class="iframe-video" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src="https://www.youtube-nocookie.com/embed/NeMIq97NmqU?autoplay=1&autohide=1&fs=1&rel=0&hd=1&wmode=transparent&enablejsapi=1&html5=1" scrolling="no"></iframe>
+                                    </ng-container>
+                                </nz-modal>
                             </div>
                             <div class="col-lg-5 ml-auto align-self-center" data-aos="fade-right" data-aos-duration="1000">
                                 <h2 class="text-black">Anverally &amp; Sons</h2>
@@ -258,12 +288,17 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-right" data-aos-duration="1000">
-                                <a data-fancybox="" data-ratio="1.5" href="https://youtu.be/zLDScu8ou6M" class="video-img">
-				<span class="play">
-					<span class="icon-play"></span>
-				</span>
-                                    <img src="assets/images/success-stories/success-stories-resus.png" alt="Resus Energy with Pristine Solutions for SAP Business One" class="img-fluid">
-                                </a>
+                                <div class="video-wrapper" (click)="showResusModal()">
+                                    <div class="play-icon">
+                                        <img src="assets/images/icons/play-fill.svg" alt="">
+                                    </div>
+                                    <img src="assets/images/success-stories/success-stories-resus.png" alt="Akra Bakers with Pristine Solutions for SAP Business One" class="img-fluid">
+                                </div>
+                                <nz-modal [(nzVisible)]="isResusVisible" (nzOnCancel)="handleResusModal()" [nzCentered]="true" [nzFooter]="null" [nzWidth]="1060">
+                                    <ng-container *nzModalContent>
+                                        <iframe name="fancybox-frame1658991412484" class="iframe-video" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src="https://www.youtube-nocookie.com/embed/zLDScu8ou6M?autoplay=1&autohide=1&fs=1&rel=0&hd=1&wmode=transparent&enablejsapi=1&html5=1" scrolling="no"></iframe>
+                                    </ng-container>
+                                </nz-modal>
                             </div>
                             <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-left">
                                 <h2 class="text-black">Resus Energy PLC</h2>
@@ -277,12 +312,17 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="mb-4 mb-lg-0 col-lg-6" data-aos="fade-left">
-                                <a data-fancybox="" data-ratio="1.5" href="https://youtu.be/LRou7DvROl8" class="video-img">
-				<span class="play">
-					<span class="icon-play"></span>
-				</span>
-                                    <img src="assets/images/success-stories/success-stories-nmi.png" alt="NM Infra with Pristine Solutions for SAP Business One" class="img-fluid">
-                                </a>
+                                <div class="video-wrapper" (click)="showNmiModal()">
+                                    <div class="play-icon">
+                                        <img src="assets/images/icons/play-fill.svg" alt="">
+                                    </div>
+                                    <img src="assets/images/success-stories/success-stories-nmi.png" alt="Akra Bakers with Pristine Solutions for SAP Business One" class="img-fluid">
+                                </div>
+                                <nz-modal [(nzVisible)]="isNmiVisible" (nzOnCancel)="handleNmiModal()" [nzCentered]="true" [nzFooter]="null" [nzWidth]="1060">
+                                    <ng-container *nzModalContent>
+                                        <iframe name="fancybox-frame1658991412484" class="iframe-video" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src="https://www.youtube-nocookie.com/embed/LRou7DvROl8?autoplay=1&autohide=1&fs=1&rel=0&hd=1&wmode=transparent&enablejsapi=1&html5=1" scrolling="no"></iframe>
+                                    </ng-container>
+                                </nz-modal>
                             </div>
                             <div class="col-lg-5 ml-auto align-self-center" data-aos="fade-right" data-aos-duration="1000">
                                 <h2 class="text-black">NMI Infra</h2>

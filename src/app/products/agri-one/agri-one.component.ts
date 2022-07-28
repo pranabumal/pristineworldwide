@@ -9,6 +9,7 @@ declare let hbspt: any
     styleUrls: ['./agri-one.component.scss']
 })
 export class AgriOneComponent implements OnInit {
+    isFarmDetectorVisible: boolean = false;
 
     constructor() {
     }
@@ -28,5 +29,13 @@ export class AgriOneComponent implements OnInit {
 
     scroll(el: any) {
         el.scrollIntoView();
+    }
+
+    showFarmDetectorModal() {
+        this.isFarmDetectorVisible = true;
+    }
+
+    handleFarmDetectorModal() {
+        this.isFarmDetectorVisible = false;
     }
 }

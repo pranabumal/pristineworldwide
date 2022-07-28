@@ -15,3 +15,14 @@
         }
     }
 }
+
+::ng-deep {
+    .ant-modal-body {
+        padding: 0;
+    }
+
+    .ant-modal-close {
+        top: -60px;
+        right: -60px;
+    }
+}

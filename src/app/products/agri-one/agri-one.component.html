@@ -42,12 +42,17 @@
 
             </div>
             <div class="col-lg-6 text-left heading-section mb-5" data-aos="fade-up" data-aos-duration="1000">
-                <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-                    <span class="play">
-                        <span class="icon-play"></span>
-                      </span>
+                <div class="video-wrapper" (click)="showFarmDetectorModal()">
+                    <div class="play-icon">
+                        <img src="assets/images/icons/play-fill.svg" alt="">
+                    </div>
                     <img src="assets/images/agri/agrione-farmdetector.jpeg" alt="Image" class="img-fluid">
-                </a>
+                </div>
+                <nz-modal [(nzVisible)]="isFarmDetectorVisible" (nzOnCancel)="handleFarmDetectorModal()" [nzCentered]="true" [nzFooter]="null" [nzWidth]="1060">
+                    <ng-container *nzModalContent>
+                        <iframe name="fancybox-frame1658991412484" class="iframe-video" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src="https://www.youtube-nocookie.com/embed/w-qam2qTmWU?autoplay=1&autohide=1&fs=1&rel=0&hd=1&wmode=transparent&enablejsapi=1&html5=1" scrolling="no"></iframe>
+                    </ng-container>
+                </nz-modal>
             </div>
         </div>
 

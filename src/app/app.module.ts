@@ -45,6 +45,7 @@ import {ProjectManagementComponent} from "./services/project-management/project-
 import {ServiceTrainingComponent} from "./services/service-training/service-training.component";
 import {ConsultingComponent} from "./services/consulting/consulting.component";
 import {IndustryComponent} from "./industry/industry.component";
+import {NzModalModule} from "ng-zorro-antd/modal";
 
 registerLocaleData(en);
 
@@ -92,7 +93,8 @@ registerLocaleData(en);
         NzIconModule,
         NzAffixModule,
         NzGridModule,
-        NzCarouselModule
+        NzCarouselModule,
+        NzModalModule
     ],
     providers: [{ provide: NZ_I18N, useValue: en_US }],
     bootstrap: [AppComponent]

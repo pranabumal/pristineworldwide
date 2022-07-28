@@ -10,6 +10,15 @@ import * as AOS from 'aos';
 })
 export class SuccessStoriesComponent implements OnInit {
 
+    isAkraVisible = false;
+    isKmnVisible = false;
+    isPrimeVisible = false;
+    isAmazonVisible = false;
+    isBiomedVisible = false;
+    isAnverallyVisible = false;
+    isResusVisible = false;
+    isNmiVisible = false;
+
     customOptions: OwlOptions = {
         loop: true,
         mouseDrag: true,
@@ -35,9 +44,74 @@ export class SuccessStoriesComponent implements OnInit {
         nav: true
     }
 
+
     constructor() { }
 
     ngOnInit(): void {
         AOS.init();
+    }
+
+    showAkraModal(): void {
+        this.isAkraVisible = true;
+    }
+
+    showKmnModal(): void {
+        this.isKmnVisible = true;
+    }
+
+    handleAkraModal(): void {
+        this.isAkraVisible = false;
+    }
+
+    handleKmnModal(): void {
+        this.isKmnVisible = false;
+    }
+
+    showPrimeModal() {
+        this.isPrimeVisible = true;
+    }
+
+    handlePrimeModal() {
+        this.isPrimeVisible = false;
+    }
+
+    showAmazonModal() {
+        this.isAmazonVisible = true;
+    }
+
+    handleAmazonModal() {
+        this.isAmazonVisible = false;
+    }
+
+    showBiomedModal() {
+        this.isBiomedVisible = true;
+    }
+
+    handleBiomedModal() {
+        this.isBiomedVisible = false;
+    }
+
+    showAnverallyModal() {
+        this.isAnverallyVisible = true;
+    }
+
+    handleAnverallyModal() {
+        this.isAnverallyVisible = false;
+    }
+
+    showResusModal() {
+        this.isResusVisible = true;
+    }
+
+    handleResusModal() {
+        this.isResusVisible = false;
+    }
+
+    showNmiModal() {
+        this.isNmiVisible = true;
+    }
+
+    handleNmiModal() {
+        this.isNmiVisible = false;
     }
 }

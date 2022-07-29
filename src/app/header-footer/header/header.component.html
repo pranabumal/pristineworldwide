@@ -39,11 +39,29 @@
                     <a class="navbar-brand" href="#">
                         <img src="assets/images/pristine-logo.png" alt="">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsupportedcontent" aria-controls="navbarsupportedcontent" aria-expanded="false" aria-label="toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler border" (click)="handleDropDown()" type="button" data-toggle="collapse" data-target="#navbarsupportedcontent" aria-controls="navbarsupportedcontent"  [attr.aria-expanded]="isDropdownCollapsed" aria-label="toggle navigation">
+                        <img class="pb-1" src="assets/images/icons/hamburger-menu.svg" alt="">
                     </button>
 
+                    <!-- Bar Menu -->
+                    <!--<button role="button" (click)="handleDropDown()" class="navbar-toggler rounded-0" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show/Hide Main Menu">
+&lt;!&ndash;                        <span class="fas fa-fw" [ngClass]="isDropdownCollapsed?'fa-times':'fa-bars'"></span>&ndash;&gt;
+                        <span class="navbar-toggler-icon"></span>
+                    </button>-->
+
                     <div class="collapse navbar-collapse" id="navbarsupportedcontent">
+                        <!--Head-->
+                        <div class="container d-lg-none">
+                            <div class="navbar-header w-100">
+                                <a href="javascript:void(0)" routerLink="/"  class="navbar-brand text-center logo-link mr-auto" >
+                                    <img class="logo-img" id="logo-img" src="assets/images/pristine-logo.png" alt="Pristine Worldwide">
+                                </a>
+                                <!-- Bar Menu -->
+                                <button role="button" (click)="closeHamburgerMenu()" class="navbar-toggler rounded-0 border float-right mt-4" type="button" aria-controls="navbarSupportedContent" [attr.aria-expanded]="isDropdownCollapsed" aria-label="Show/Hide Main Menu">
+                                    <img class="pb-1" src="assets/images/icons/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
                         <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <a class="nav-link"  nz-dropdown [nzDropdownMenu]="products">

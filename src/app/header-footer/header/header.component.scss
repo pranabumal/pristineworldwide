@@ -51,20 +51,22 @@
     .navbar-collapse {
         justify-content: flex-end !important;
 
-        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
-        height: 100%;
-        right: 0;
-        position: fixed;
-        overflow: auto;
-        top: 0;
-        width: 80%;
-        transform: translate3d(100%,0,0);
-        transition: transform .3s cubic-bezier(.785,.135,.15,.86);
-        z-index: 1012;
-        background: $header-bg;
+        @include media-breakpoint-down(lg) {
+            box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+            height: 100%;
+            right: 0;
+            position: fixed;
+            overflow: auto;
+            top: 0;
+            width: 80%;
+            transform: translate3d(100%,0,0);
+            transition: transform .3s cubic-bezier(.785,.135,.15,.86);
+            z-index: 1012;
+            background: $header-bg;
 
-        &.show {
-            transform: translate3d(0, 0, 0);
+            &.show {
+                transform: translate3d(0, 0, 0);
+            }
         }
 
         .navbar-nav {

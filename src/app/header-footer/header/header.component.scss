@@ -62,7 +62,7 @@
             transform: translate3d(100%,0,0);
             transition: transform .3s cubic-bezier(.785,.135,.15,.86);
             z-index: 1012;
-            background: $header-bg;
+            background: $white;
 
             &.show {
                 transform: translate3d(0, 0, 0);

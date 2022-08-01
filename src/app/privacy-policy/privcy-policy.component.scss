@@ -1,0 +1,27 @@
+@import "src/styles/custom-variables";
+
+.privacy-policy {
+    padding: 50px 0;
+
+    .sidebar-box {
+        .categories {
+            li {
+                a {
+                    &:hover {
+                        .number {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .number {
+                        color: $custom-info;
+                    }
+
+                    .link-text {
+                        color: #cccccc;
+                    }
+                }
+            }
+        }
+    }
+}

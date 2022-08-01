@@ -50,6 +50,7 @@ import {NzImageModule} from "ng-zorro-antd/image";
 import {CareersComponent} from "./career/careers/careers.component";
 import {WebinarsComponent} from "./webinars/webinars.component";
 import {WhitePapersComponent} from "./white-papers/white-papers.component";
+import {PrivcyPolicyComponent} from "./privacy-policy/privcy-policy.component";
 
 registerLocaleData(en);
 
@@ -87,7 +88,8 @@ registerLocaleData(en);
         IndustryComponent,
         CareersComponent,
         WebinarsComponent,
-        WhitePapersComponent
+        WhitePapersComponent,
+        PrivcyPolicyComponent
     ],
     imports: [
         BrowserModule,

@@ -29,6 +29,7 @@ import {IndustryComponent} from "./industry/industry.component";
 import {CareersComponent} from "./career/careers/careers.component";
 import {WebinarsComponent} from "./webinars/webinars.component";
 import {WhitePapersComponent} from "./white-papers/white-papers.component";
+import {PrivcyPolicyComponent} from "./privacy-policy/privcy-policy.component";
 
 const routes: Routes = [
 
@@ -61,6 +62,7 @@ const routes: Routes = [
     {path: 'careers', component: CareersComponent},
     {path: 'webinars', component: WebinarsComponent},
     {path: 'white-papers', component: WhitePapersComponent},
+    {path: 'privacy-policy', component: PrivcyPolicyComponent},
     {path: '**', redirectTo: ''}
 ];
 

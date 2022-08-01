@@ -1,0 +1,24 @@
+@import "src/styles/custom-variables";
+
+.white-papers {
+    padding: 50px 0;
+
+    a {
+        &:hover {
+            text-decoration-color: $custom-info;
+        }
+    }
+
+    .block_service {
+        color: $body-color;
+
+        img {
+            max-width: 100px;
+            margin-bottom: 30px;
+        }
+
+        .read-more {
+            color: $custom-info;
+        }
+    }
+}

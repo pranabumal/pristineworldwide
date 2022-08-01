@@ -1,0 +1,24 @@
+@import "src/styles/custom-variables";
+
+.webinars {
+    padding: 50px 0;
+
+    .block_service-wrapper {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .block_service {
+        color: $body-color;
+
+        img {
+            max-width: 100px;
+            margin-bottom: 30px;
+        }
+
+        .post-meta {
+            color: $custom-info;
+        }
+    }
+}

@@ -47,6 +47,8 @@ import {ConsultingComponent} from "./services/consulting/consulting.component";
 import {IndustryComponent} from "./industry/industry.component";
 import {NzModalModule} from "ng-zorro-antd/modal";
 import {NzImageModule} from "ng-zorro-antd/image";
+import {CareersComponent} from "./career/careers/careers.component";
+import {WebinarsComponent} from "./webinars/webinars.component";
 
 registerLocaleData(en);
 
@@ -81,7 +83,9 @@ registerLocaleData(en);
         ProjectManagementComponent,
         ServiceTrainingComponent,
         ConsultingComponent,
-        IndustryComponent
+        IndustryComponent,
+        CareersComponent,
+        WebinarsComponent
     ],
     imports: [
         BrowserModule,

@@ -74,6 +74,13 @@
                 padding: 30px 20px;
                 color: $nav-link-color;
 
+                @include media-breakpoint-down(lg) {
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
                 &:hover {
                     color: $nav-link-hover;
                 }
@@ -94,5 +101,14 @@
 
     .ant-dropdown-menu-submenu-title {
         padding: 9px 20px;
+    }
+
+    .ant-menu-submenu.ant-menu-submenu-placement-left {
+        @include media-breakpoint-down(md) {
+            right: -300px;
+            position: relative;
+            top: 40px;
+            width: 150px;
+        }
     }
 }

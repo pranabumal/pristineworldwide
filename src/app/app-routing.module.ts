@@ -28,6 +28,7 @@ import {ConsultingComponent} from "./services/consulting/consulting.component";
 import {IndustryComponent} from "./industry/industry.component";
 import {CareersComponent} from "./career/careers/careers.component";
 import {WebinarsComponent} from "./webinars/webinars.component";
+import {WhitePapersComponent} from "./white-papers/white-papers.component";
 
 const routes: Routes = [
 
@@ -59,6 +60,7 @@ const routes: Routes = [
     {path: 'contact-us', component: ContactUsComponent},
     {path: 'careers', component: CareersComponent},
     {path: 'webinars', component: WebinarsComponent},
+    {path: 'white-papers', component: WhitePapersComponent},
     {path: '**', redirectTo: ''}
 ];
 

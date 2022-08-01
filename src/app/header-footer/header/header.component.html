@@ -39,7 +39,7 @@
                     <a class="navbar-brand" [routerLink]="['/']">
                         <img src="assets/images/pristine-logo.png" alt="">
                     </a>
-                    <button class="navbar-toggler border border-dark" (click)="handleDropDown()" type="button" data-toggle="collapse" data-target="#navbarsupportedcontent" aria-controls="navbarsupportedcontent"  [attr.aria-expanded]="isDropdownCollapsed" aria-label="toggle navigation">
+                    <button class="navbar-toggler border" (click)="handleDropDown()" type="button" data-toggle="collapse" data-target="#navbarsupportedcontent" aria-controls="navbarsupportedcontent"  [attr.aria-expanded]="isDropdownCollapsed" aria-label="toggle navigation">
                         <img class="pb-1" src="assets/images/icons/hamburger-menu.svg" alt="">
                     </button>
 
@@ -54,7 +54,7 @@
                         <div class="container d-lg-none">
                             <div class="navbar-header w-100">
                                 <!-- Bar Menu -->
-                                <button role="button" (click)="closeHamburgerMenu()" class="navbar-toggler rounded-0 border float-right mt-4" type="button" aria-controls="navbarSupportedContent" [attr.aria-expanded]="isDropdownCollapsed" aria-label="Show/Hide Main Menu">
+                                <button role="button" (click)="closeHamburgerMenu()" class="navbar-toggler rounded-0 border border-dark float-right mt-4" type="button" aria-controls="navbarSupportedContent" [attr.aria-expanded]="isDropdownCollapsed" aria-label="Show/Hide Main Menu">
                                     <img class="pb-1" src="assets/images/icons/close.svg" alt="">
                                 </button>
                             </div>

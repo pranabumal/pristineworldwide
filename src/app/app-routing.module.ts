@@ -26,6 +26,7 @@ import {ProjectManagementComponent} from "./services/project-management/project-
 import {ServiceTrainingComponent} from "./services/service-training/service-training.component";
 import {ConsultingComponent} from "./services/consulting/consulting.component";
 import {IndustryComponent} from "./industry/industry.component";
+import {CareersComponent} from "./career/careers/careers.component";
 
 const routes: Routes = [
 
@@ -55,6 +56,7 @@ const routes: Routes = [
     {path: 'consulting', component: ConsultingComponent},
     {path: 'industry', component: IndustryComponent},
     {path: 'contact-us', component: ContactUsComponent},
+    {path: 'careers', component: CareersComponent},
     {path: '**', redirectTo: ''}
 ];
 

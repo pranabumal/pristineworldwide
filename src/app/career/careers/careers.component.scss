@@ -1,0 +1,24 @@
+@import "src/styles/custom-variables";
+
+.careers {
+
+}
+
+//owl carousel
+::ng-deep {
+    .owl-theme .owl-nav [class*=owl-] {
+        background: transparent;
+
+        &:hover {
+            background: transparent !important;
+        }
+
+        .nav-btn {
+
+            img {
+                width: 22px !important;
+                height: 20px !important;
+            }
+        }
+    }
+}

@@ -14,4 +14,18 @@
     .key-capability {
         color: $subtitle-color;
     }
+
+    .hover-1-wrap {
+        img {
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+        }
+
+        .details-info {
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+        }
+    }
 }

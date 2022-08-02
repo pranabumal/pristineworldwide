@@ -56,6 +56,7 @@ import {
     IntelligentTechnologyFarmingComponent
 } from "./white-papers/intelligent-technology-farming/intelligent-technology-farming.component";
 import {PristineSfaComponent} from "./white-papers/pristine-sfa/pristine-sfa.component";
+import {WebinarAzureComponent} from "./webinars/webinar-azure/webinar-azure.component";
 
 registerLocaleData(en);
 
@@ -97,7 +98,8 @@ registerLocaleData(en);
         PrivcyPolicyComponent,
         TransformSalesForceComponent,
         IntelligentTechnologyFarmingComponent,
-        PristineSfaComponent
+        PristineSfaComponent,
+        WebinarAzureComponent
     ],
     imports: [
         BrowserModule,

@@ -1,0 +1,15 @@
+@import "src/styles/custom-variables";
+
+.webinar-azure {
+    padding: 50px 0;
+
+    .content {
+        .cloud-migration-title {
+            color: $hero-text-color;
+        }
+
+        .key-point-title {
+            color: #50d8af;
+        }
+    }
+}

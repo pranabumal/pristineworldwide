@@ -35,6 +35,7 @@ import {
     IntelligentTechnologyFarmingComponent
 } from "./white-papers/intelligent-technology-farming/intelligent-technology-farming.component";
 import {PristineSfaComponent} from "./white-papers/pristine-sfa/pristine-sfa.component";
+import {WebinarAzureComponent} from "./webinars/webinar-azure/webinar-azure.component";
 
 const routes: Routes = [
 
@@ -66,6 +67,7 @@ const routes: Routes = [
     {path: 'contact-us', component: ContactUsComponent},
     {path: 'careers', component: CareersComponent},
     {path: 'webinars', component: WebinarsComponent},
+    {path: 'webinar-AZURE', component: WebinarAzureComponent},
     {path: 'white-papers', component: WhitePapersComponent},
     {path: 'privacy-policy', component: PrivcyPolicyComponent},
     {path: 'whitepaper-transformSalesForce', component: TransformSalesForceComponent},

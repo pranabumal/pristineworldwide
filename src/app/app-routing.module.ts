@@ -30,6 +30,7 @@ import {CareersComponent} from "./career/careers/careers.component";
 import {WebinarsComponent} from "./webinars/webinars.component";
 import {WhitePapersComponent} from "./white-papers/white-papers.component";
 import {PrivcyPolicyComponent} from "./privacy-policy/privcy-policy.component";
+import {TransformSalesForceComponent} from "./white-papers/transform-sales-force/transform-sales-force.component";
 
 const routes: Routes = [
 
@@ -63,6 +64,7 @@ const routes: Routes = [
     {path: 'webinars', component: WebinarsComponent},
     {path: 'white-papers', component: WhitePapersComponent},
     {path: 'privacy-policy', component: PrivcyPolicyComponent},
+    {path: 'whitepaper-transformSalesForce', component: TransformSalesForceComponent},
     {path: '**', redirectTo: ''}
 ];
 

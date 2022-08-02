@@ -51,6 +51,7 @@ import {CareersComponent} from "./career/careers/careers.component";
 import {WebinarsComponent} from "./webinars/webinars.component";
 import {WhitePapersComponent} from "./white-papers/white-papers.component";
 import {PrivcyPolicyComponent} from "./privacy-policy/privcy-policy.component";
+import {TransformSalesForceComponent} from "./white-papers/transform-sales-force/transform-sales-force.component";
 
 registerLocaleData(en);
 
@@ -89,7 +90,8 @@ registerLocaleData(en);
         CareersComponent,
         WebinarsComponent,
         WhitePapersComponent,
-        PrivcyPolicyComponent
+        PrivcyPolicyComponent,
+        TransformSalesForceComponent
     ],
     imports: [
         BrowserModule,

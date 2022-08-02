@@ -55,6 +55,7 @@ import {TransformSalesForceComponent} from "./white-papers/transform-sales-force
 import {
     IntelligentTechnologyFarmingComponent
 } from "./white-papers/intelligent-technology-farming/intelligent-technology-farming.component";
+import {PristineSfaComponent} from "./white-papers/pristine-sfa/pristine-sfa.component";
 
 registerLocaleData(en);
 
@@ -95,7 +96,8 @@ registerLocaleData(en);
         WhitePapersComponent,
         PrivcyPolicyComponent,
         TransformSalesForceComponent,
-        IntelligentTechnologyFarmingComponent
+        IntelligentTechnologyFarmingComponent,
+        PristineSfaComponent
     ],
     imports: [
         BrowserModule,

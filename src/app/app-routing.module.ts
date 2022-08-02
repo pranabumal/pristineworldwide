@@ -34,6 +34,7 @@ import {TransformSalesForceComponent} from "./white-papers/transform-sales-force
 import {
     IntelligentTechnologyFarmingComponent
 } from "./white-papers/intelligent-technology-farming/intelligent-technology-farming.component";
+import {PristineSfaComponent} from "./white-papers/pristine-sfa/pristine-sfa.component";
 
 const routes: Routes = [
 
@@ -69,6 +70,7 @@ const routes: Routes = [
     {path: 'privacy-policy', component: PrivcyPolicyComponent},
     {path: 'whitepaper-transformSalesForce', component: TransformSalesForceComponent},
     {path: 'whitepaper-useOfIntelligentTechnologiesInFarming', component: IntelligentTechnologyFarmingComponent},
+    {path: 'whitepaper-whatIsPristineSfa', component: PristineSfaComponent},
     {path: '**', redirectTo: ''}
 ];
 

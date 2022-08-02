@@ -73,12 +73,12 @@
                     Printing & Packaging, Food & Beverage, Information Technology, Sales, Health Care Industry & hospitals.
                     Pristine comprehends experience in Enterprise solutions for over a decade since 2005.
                 </p>
-                <button class="btn btn-secondary mb-5">More about our Industries</button>
+                <button class="btn btn-secondary mb-5" [routerLink]="['/industry']">More about our Industries</button>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                <a class="section-grid">
+                <a class="section-grid" [routerLink]="['/industry']">
                     <img class="grid-img" src="assets/images/industry-support/customer-product.png" alt="">
                     <h3>Consumer Products - eCommerce SAP Business One integration</h3>
                     <p>
@@ -87,7 +87,7 @@
                 </a>
             </div>
             <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                <a class="section-grid">
+                <a class="section-grid" [routerLink]="['/industry']">
                     <img class="grid-img" src="assets/images/industry-support/professional-service.png" alt="">
                     <h3>Professional Services/Project Management</h3>
                     <p>
@@ -96,7 +96,7 @@
                 </a>
             </div>
             <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                <a class="section-grid">
+                <a class="section-grid" [routerLink]="['/industry']">
                     <img class="grid-img" src="assets/images/industry-support/agriculture.png" alt="">
                     <h3>Agriculture</h3>
                     <p>
@@ -105,7 +105,7 @@
                 </a>
             </div>
             <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                <a class="section-grid">
+                <a class="section-grid" [routerLink]="['/industry']">
                     <img class="grid-img" src="assets/images/industry-support/logistics.png" alt="">
                     <h3>Logistics</h3>
                     <p>
@@ -114,7 +114,7 @@
                 </a>
             </div>
             <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                <a class="section-grid">
+                <a class="section-grid" [routerLink]="['/industry']">
                     <img class="grid-img" src="assets/images/industry-support/tea.png" alt="">
                     <h3>Tea</h3>
                     <p>
@@ -123,7 +123,7 @@
                 </a>
             </div>
             <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                <a class="section-grid">
+                <a class="section-grid" [routerLink]="['/industry']">
                     <img class="grid-img" src="assets/images/industry-support/apparel.png" alt="">
                     <h3>Apparel</h3>
                     <p>
@@ -132,7 +132,7 @@
                 </a>
             </div>
             <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                <a class="section-grid">
+                <a class="section-grid" [routerLink]="['/industry']">
                     <img class="grid-img" src="assets/images/industry-support/food.png" alt="">
                     <h3>Food & Beverage</h3>
                     <p>
@@ -141,7 +141,7 @@
                 </a>
             </div>
             <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                <a class="section-grid">
+                <a class="section-grid" [routerLink]="['/industry']">
                     <img class="grid-img" src="assets/images/industry-support/construction.png" alt="">
                     <h3>Construction</h3>
                     <p>
@@ -179,7 +179,7 @@
                         <li><i class="mr-2" nz-icon nzType="check" nzTheme="outline"></i> Operational efficiency</li>
                         <li><i class="mr-2" nz-icon nzType="check" nzTheme="outline"></i> Workforce productivity</li>
                     </ul>
-                    <button class="btn btn-learn-more">
+                    <button class="btn btn-learn-more" [routerLink]="['/technology-iot']">
                         Learn more
                     </button>
                 </div>
@@ -195,7 +195,7 @@
                         <li><i class="mr-2" nz-icon nzType="check" nzTheme="outline"></i>Networks Experience</li>
                         <li><i class="mr-2" nz-icon nzType="check" nzTheme="outline"></i>BaaS Abstraction Layer</li>
                     </ul>
-                    <button class="btn btn-learn-more">
+                    <button class="btn btn-learn-more" [routerLink]="['/technology-blockchain']">
                         Learn more
                     </button>
                 </div>
@@ -211,7 +211,7 @@
                         <li><i class="mr-2" nz-icon nzType="check" nzTheme="outline"></i>Unsupervised Learning</li>
                         <li><i class="mr-2" nz-icon nzType="check" nzTheme="outline"></i>Reinforcement Learning</li>
                     </ul>
-                    <button class="btn btn-learn-more">
+                    <button class="btn btn-learn-more" [routerLink]="['/technology-machine-learning']">
                         Learn more
                     </button>
                 </div>
@@ -230,7 +230,7 @@
                 <p class="page-subtitle">
                     Hear from Real Customers! Learn how our solutions benefit their businesses.
                 </p>
-                <button class="btn btn-secondary mb-5">Watch Testimonials</button>
+                <button class="btn btn-secondary mb-5" [routerLink]="['/success-stories']">Watch Testimonials</button>
             </div>
         </div>
         <owl-carousel-o [options]="customOptions">
@@ -366,7 +366,7 @@
                     <hr>
                     <img src="assets/images/services/nav-project.png" alt="">
                     <p class="box-info-text">Industry standard project management methodologies with best practice processes and techniques have been the key criteria for success in our engagements.</p>
-                    <button class="btn btn-learn-more">
+                    <button class="btn btn-learn-more" [routerLink]="['/project-management']">
                         Learn more
                     </button>
                 </div>
@@ -378,7 +378,7 @@
                     <hr>
                     <img src="assets/images/services/nav-training.png" alt="">
                     <p class="box-info-text">Our focused customer support team will contact you on any inquiry you have related to post-implementation services. Use our support portal to log a request or call our support team directly.</p>
-                    <button class="btn btn-learn-more">
+                    <button class="btn btn-learn-more" [routerLink]="['/support-service']">
                         Learn more
                     </button>
                 </div>
@@ -390,7 +390,7 @@
                     <hr>
                     <img src="assets/images/services/nav-consulting.png" alt="">
                     <p class="box-info-text">Our professional services group has the technical expertise, diverse knowledge, and customer service training to make sure that solutions we offer enables you to meet your business goals.</p>
-                    <button class="btn btn-learn-more">
+                    <button class="btn btn-learn-more" [routerLink]="['/consulting']">
                         Learn more
                     </button>
                 </div>
@@ -410,7 +410,7 @@
                     <p class="page-subtitle">
                         Working with technology leaders, we bring the best technologies on the market to make the most of your business.
                     </p>
-                    <button class="btn btn-secondary mb-5">View all Partners:</button>
+                    <button class="btn btn-secondary mb-5" [routerLink]="['/partnerships']">View all Partners:</button>
                 </div>
             </div>
         </div>
@@ -424,7 +424,7 @@
                     <div class="partners-details">
                         <h3 class="title"><a>SAP Gold Partner</a></h3>
                         <p class="text-black">We are the only Gold partner for SAP Business One in Sri Lanka</p>
-                        <p class="learn-more-link"><a class="">Learn More..</a></p>
+                        <p class="learn-more-link"><a class="" [routerLink]="['/partnerships']">Learn More..</a></p>
                     </div>
                 </div>
             </div>
@@ -436,7 +436,7 @@
                     <div class="partners-details">
                         <h3 class="title"><a>Microsoft Partner</a></h3>
                         <p class="text-black">We are ready to offer the best experience for your business with Microsoft.</p>
-                        <p class="learn-more-link"><a class="">Learn More..</a></p>
+                        <p class="learn-more-link"><a class="" [routerLink]="['/partnerships']">Learn More..</a></p>
                     </div>
                 </div>
             </div>
@@ -448,7 +448,7 @@
                     <div class="partners-details">
                         <h3 class="title"><a>Focused Impressions</a></h3>
                         <p class="text-black">Growing businesses with a fully integrated and adaptable <a class="learn-more-link">eCommerce platform</a></p>
-                        <p class="learn-more-link"><a class="">Learn More..</a></p>
+                        <p class="learn-more-link"><a class="" [routerLink]="['/partnerships']">Learn More..</a></p>
                     </div>
                 </div>
             </div>
@@ -460,7 +460,7 @@
                     <div class="partners-details">
                         <h3 class="title"><a>Big Commerce</a></h3>
                         <p class="text-black">Automate synchronization of business processes and much more.</p>
-                        <p class="learn-more-link"><a class="">Learn More..</a></p>
+                        <p class="learn-more-link"><a class="" [routerLink]="['/partnerships']">Learn More..</a></p>
                     </div>
                 </div>
             </div>
@@ -472,7 +472,7 @@
                     <div class="partners-details">
                         <h3 class="title"><a>Ship Station</a></h3>
                         <p class="text-black">A shipping software solution that makes it easier to manage your shipping orders.</p>
-                        <p class="learn-more-link"><a class="">Learn More..</a></p>
+                        <p class="learn-more-link"><a class="" [routerLink]="['/partnerships']">Learn More..</a></p>
                     </div>
                 </div>
             </div>

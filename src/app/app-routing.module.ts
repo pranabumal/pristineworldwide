@@ -31,6 +31,9 @@ import {WebinarsComponent} from "./webinars/webinars.component";
 import {WhitePapersComponent} from "./white-papers/white-papers.component";
 import {PrivcyPolicyComponent} from "./privacy-policy/privcy-policy.component";
 import {TransformSalesForceComponent} from "./white-papers/transform-sales-force/transform-sales-force.component";
+import {
+    IntelligentTechnologyFarmingComponent
+} from "./white-papers/intelligent-technology-farming/intelligent-technology-farming.component";
 
 const routes: Routes = [
 
@@ -65,6 +68,7 @@ const routes: Routes = [
     {path: 'white-papers', component: WhitePapersComponent},
     {path: 'privacy-policy', component: PrivcyPolicyComponent},
     {path: 'whitepaper-transformSalesForce', component: TransformSalesForceComponent},
+    {path: 'whitepaper-useOfIntelligentTechnologiesInFarming', component: IntelligentTechnologyFarmingComponent},
     {path: '**', redirectTo: ''}
 ];
 

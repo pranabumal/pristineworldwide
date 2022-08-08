@@ -18,8 +18,8 @@ export class ContactUsComponent implements OnInit {
 
     ngAfterContentInit(): void {
         hbspt.forms.create({
-            portalId: "6764477",
-            formId: "5d62b6a1-cddb-4ace-b553-7efcf2b4abfb",
+            portalId: "22480607",
+            formId: "11b16cef-7bb3-4a36-b9af-2b44063de231",
             target: "#hubspotForm"
         });
     }

@@ -57,6 +57,9 @@ import {
 } from "./white-papers/intelligent-technology-farming/intelligent-technology-farming.component";
 import {PristineSfaComponent} from "./white-papers/pristine-sfa/pristine-sfa.component";
 import {WebinarAzureComponent} from "./webinars/webinar-azure/webinar-azure.component";
+import {BigDataComponent} from "./technology/big-data/big-data.component";
+import {RpaComponent} from "./technology/rpa/rpa.component";
+import {BusinessIntelligentComponent} from "./technology/business-intelligent/business-intelligent.component";
 
 registerLocaleData(en);
 
@@ -99,7 +102,10 @@ registerLocaleData(en);
         TransformSalesForceComponent,
         IntelligentTechnologyFarmingComponent,
         PristineSfaComponent,
-        WebinarAzureComponent
+        WebinarAzureComponent,
+        BigDataComponent,
+        RpaComponent,
+        BusinessIntelligentComponent
     ],
     imports: [
         BrowserModule,

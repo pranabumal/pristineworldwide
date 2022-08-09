@@ -36,6 +36,9 @@ import {
 } from "./white-papers/intelligent-technology-farming/intelligent-technology-farming.component";
 import {PristineSfaComponent} from "./white-papers/pristine-sfa/pristine-sfa.component";
 import {WebinarAzureComponent} from "./webinars/webinar-azure/webinar-azure.component";
+import {BigDataComponent} from "./technology/big-data/big-data.component";
+import {RpaComponent} from "./technology/rpa/rpa.component";
+import {BusinessIntelligentComponent} from "./technology/business-intelligent/business-intelligent.component";
 
 const routes: Routes = [
 
@@ -60,6 +63,9 @@ const routes: Routes = [
     {path: 'technology-iot', component: IotComponent},
     {path: 'technology-blockchain', component: BlockChainComponent},
     {path: 'technology-machine-learning', component: MachineLearningComponent},
+    {path: 'technology-big-data', component: BigDataComponent},
+    {path: 'technology-rpa', component: RpaComponent},
+    {path: 'technology-business-intelligent', component: BusinessIntelligentComponent},
     {path: 'project-management', component: ProjectManagementComponent},
     {path: 'support-service', component: ServiceTrainingComponent},
     {path: 'consulting', component: ConsultingComponent},

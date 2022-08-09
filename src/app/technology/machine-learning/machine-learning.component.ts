@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-machine-learning',
   templateUrl: './machine-learning.component.html',
   styleUrls: ['./machine-learning.component.scss']
 })

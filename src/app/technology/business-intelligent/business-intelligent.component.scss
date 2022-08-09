@@ -1,0 +1,17 @@
+@import "src/styles/custom-variables";
+
+.machine-learning {
+    color: $subtitle-color;
+    margin-bottom: 60px;
+
+    .page-heading-section {
+        .title {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .key-capability {
+        color: $subtitle-color;
+    }
+}

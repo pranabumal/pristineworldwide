@@ -22,5 +22,8 @@ export class ContactUsComponent implements OnInit {
             formId: "11b16cef-7bb3-4a36-b9af-2b44063de231",
             target: "#hubspotForm"
         });
+        setTimeout(function (){
+            window.scrollTo(1510, 1510);
+        },10);
     }
 }

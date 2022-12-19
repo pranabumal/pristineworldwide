@@ -25,7 +25,7 @@ jobs:
             - name: 📂 Sync files
               uses: Penguibird/FTP-Deploy-Action@4.2.0
               with:
-                  server: ftp.pristinesolutionsbd.com
+                  server: pristinesolutionsbd.com
                   username: ${{ secrets.ftp_username }}
                   password: ${{ secrets.ftp_password }}
                   port: 21

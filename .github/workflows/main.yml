@@ -23,22 +23,11 @@ jobs:
               run: npm run build
 
             - name: 📂 Sync files
-              uses: airvzxf/ftp-deployment-action@latest
+              uses: Penguibird/FTP-Deploy-Action@4.2.0
               with:
                   server: ftp.pristinesolutionsbd.com
-                  user: ${{ secrets.ftp_username }}
+                  username: ${{ secrets.ftp_username }}
                   password: ${{ secrets.ftp_password }}
                   local_dir: "./dist/pristineworldwide"
-                  remote_dir: "/public_html"
-                  delete: "false"
-                  max_retries: "7"
-                  no_symlinks: "false"
-                  ftp_ssl_allow: "true"
-                  ftp_use_feat: "true"
-                  ftp_nop_interval: "9"
-                  net_max_retries: "0"
-                  net_persist_retries: "11"
-                  net_timeout: "13s"
-                  dns_max_retries: "17"
-                  dns_fatal_timeout: "never"
+                  server-dir: "/public_html"
 

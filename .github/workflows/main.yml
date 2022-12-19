@@ -23,10 +23,10 @@ jobs:
               run: npm run build
 
             - name: 📂 Sync files
-              uses: Penguibird/FTP-Deploy-Action@4.2.0
+              uses: airvzxf/ftp-deployment-action@latest
               with:
                   server: ftp.pristinesolutionsbd.com
                   username: ${{ secrets.ftp_username }}
                   password: ${{ secrets.ftp_password }}
-                  server-dir: /public_html
+                  local_dir: "./public_html"
 

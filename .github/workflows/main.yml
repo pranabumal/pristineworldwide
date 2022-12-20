@@ -29,6 +29,6 @@ jobs:
                   username: y4dfljf91ibq
                   password: Pristine@2023#
                   port: 21
-                  local_dir: "./dist/pristineworldwide/"
+                  local_dir: "../../dist/pristineworldwide/"
                   server-dir: "/public_html/"
 

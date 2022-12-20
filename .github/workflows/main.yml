@@ -26,9 +26,9 @@ jobs:
               uses: Penguibird/FTP-Deploy-Action@4.2.0
               with:
                   server: pristinesolutionsbd.com
-                  username: y4dfljf91ibq
-                  password: Pristine@2023#
+                  username: ${{ secrets.FTP_USERNAME }}
+                  password: ${{ secrets.FTP_PASSWORD }}
                   port: 21
-                  local_dir: "../../dist/pristineworldwide/"
+                  local_dir: "./dist/pristineworldwide/"
                   server-dir: "/public_html/"
 

@@ -122,7 +122,7 @@ registerLocaleData(en);
         NzModalModule,
         NzImageModule
     ],
-    providers: [{ provide: NZ_I18N, LocationStrategy, useValue: en_US, useClass: PathLocationStrategy }],
+    providers: [{ provide: {NZ_I18N,LocationStrategy}, useValue: en_US, useClass: PathLocationStrategy }],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

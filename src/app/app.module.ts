@@ -21,7 +21,7 @@ import {LayoutComponent} from "./layout/layout.component";
 import {NzDropDownModule} from "ng-zorro-antd/dropdown";
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
+import {LocationStrategy, PathLocationStrategy, registerLocaleData} from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -122,7 +122,7 @@ registerLocaleData(en);
         NzModalModule,
         NzImageModule
     ],
-    providers: [{ provide: NZ_I18N, useValue: en_US }],
+    providers: [{ provide: NZ_I18N, LocationStrategy, useValue: en_US, useClass: PathLocationStrategy }],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

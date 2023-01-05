@@ -29,7 +29,7 @@ jobs:
               run: gzipper c ./dist
 
             - name: Copy .htaccess and sitemap
-              run: cp htaccess sitemap.xml ./dist/pristineworldwide/
+              run: cp .htaccess sitemap.xml ./dist/pristineworldwide/
 
             - name: 📂 Sync files
               uses: SamKirkland/FTP-Deploy-Action@4.3.3

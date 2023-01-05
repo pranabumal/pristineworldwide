@@ -28,7 +28,7 @@ jobs:
             - name: Compressing
               run: gzipper c ./dist
 
-            - name: Copy htaccess and sitemap
+            - name: Copy .htaccess and sitemap
               run: cp htaccess sitemap.xml ./dist/pristineworldwide/
 
             - name: 📂 Sync files

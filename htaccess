@@ -45,6 +45,6 @@ BrowserMatch ^Mozilla/4\.0[678] no-gzip
 BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 Header append Vary User-Agent
 </IfModule>
-RewriteCond %{HTTP_HOST} ^pristinesolutionbd\.com$
+RewriteCond %{HTTP_HOST} ^pristinesolutionsbd\.com$
 RewriteRule ^/?$ "https\:\/\/pristinesolutionsbd\.com\/" [R=301,L]
 
